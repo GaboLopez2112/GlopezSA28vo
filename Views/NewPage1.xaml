@@ -5,7 +5,8 @@
              Title="NewPage1">
     <VerticalStackLayout
         Padding="30,0"
-        Spacing="25">
+        Spacing="25"
+        BackgroundColor="Gray">
         <Label 
             Text="Tarea Semana 2"
             VerticalOptions="Center" 
