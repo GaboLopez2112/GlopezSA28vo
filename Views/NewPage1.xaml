@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lopezgSA2.Views.NewPage1"
+             Title="NewPage1">
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+        <Label 
+            Text="Tarea Semana 2"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label Text="Seleccione Estudiante" FontAttributes="Bold"/>
+        <Picker x:Name="studentPicker" Title="Estudiante">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Jorge Ortega</x:String>
+                    <x:String>Gabriel Carrion</x:String>
+                    <x:String>Gabriel López</x:String>
+                    <x:String>Erick Gavilanez</x:String>
+                    <x:String>Ismael Celi</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Label Text="Parcial 1" FontAttributes="Bold" />
+
+        <Entry x:Name="seguimiento1Entry" Keyboard="Numeric" Placeholder="Seguimiento 1 (0-10)" />
+        <Entry x:Name="examen1Entry" Keyboard="Numeric" Placeholder="Examen 1 (0-10)" />
+
+        <Label Text="Parcial 2" FontAttributes="Bold" />
+
+        <Entry x:Name="seguimiento2Entry" Keyboard="Numeric" Placeholder="Seguimiento 2 (0-10)" />
+        <Entry x:Name="examen2Entry" Keyboard="Numeric" Placeholder="Examen 2 (0-10)" />
+
+        <Label Text="Fecha" FontAttributes="Bold" />
+        <DatePicker x:Name="fechaPicker" />
+
+        <Button Text="Calcular Notas del Estudiante"
+            BackgroundColor="DarkBlue"
+            TextColor="White"
+            Clicked="OnCalcularNotasClicked"/>
+        
+
+    </VerticalStackLayout>
+</ContentPage>
