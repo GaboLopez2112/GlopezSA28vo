@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lopezgSA2.Views.login"
+             Title="login">
+    <VerticalStackLayout Padding="30" Spacing="20" BackgroundColor="LightGray">
+        <Label Text="Inicio de Sesión" FontSize="24" HorizontalOptions="Center" />
+
+        <Entry x:Name="usernameEntry" Placeholder="Usuario" TextColor="Black"/>
+        <Entry x:Name="passwordEntry" Placeholder="Contraseña" IsPassword="True" TextColor="Black" />
+
+        <Button Text="Ingresar" Clicked="OnLoginClicked" BackgroundColor="DarkGreen" TextColor="White"/>
+    </VerticalStackLayout>
+</ContentPage>
